@@ -1,0 +1,19 @@
+import 'dart:io';
+
+
+void main() {
+  print("Enter younr password");
+  String password = stdin.readLineSync()!;
+
+  int length = password.length;
+  RegExp regExp = RegExp(r'\d+');
+  if(length>=8){
+      if(regExp.hasMatch(password)){
+          print("STRONG");
+      }else{
+          print("NORMAL");
+      }
+  }else{
+      print("WEAK");
+  }
+}
