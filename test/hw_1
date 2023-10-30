@@ -29,15 +29,13 @@ void main() {
       print(i);
     }
   }
-  print("Task 6----------------------------------------");
   List<int> a6 = [1, 1, 2, 3, 5, 8, 13, 21, 34, 55, 89];
   List<int> b6 = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 89];
-  List c6 = [];
-  c6.length = 11;
+  var c6 = <int>{};
   for (int i = 0; i < a6.length; i++) {
     for (int j = 0; j < b6.length; j++) {
       if (a6[i] == b6[j]) {
-        c6.add(a[i]);
+        c6.add(a6[i]);
       }
     }
   }
