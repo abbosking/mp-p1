@@ -1,0 +1,68 @@
+import 'dart:io';
+
+void main() {
+  print("Task 1----------------------------------");
+  print("My Name is Yuldashev Abbos" + "\n I'm JSEO-05 student");
+
+  print("Task 2---------------------------------------");
+  int? n = int.parse(stdin.readLineSync()!);
+  if (n % 2 == 0) {
+    print("EVEN");
+  } else {
+    print("ODD");
+  }
+  print("Task 3-----------------------------------------");
+  for (int i = 1; i <= 100; i++) {
+    print(i);
+  }
+  print("Task 4-------------------------------------");
+  List<int> a = [1, 1, 2, 3, 5, 8, 13, 21, 34, 55, 89];
+  List<int> b = a;
+  for (int i = 0; i < b.length; i++) {
+    b[i] = a[i] * a[i];
+  }
+  print(b);
+  print("Task 5-----------------------------------------");
+  int? n5 = int.parse(stdin.readLineSync()!);
+  for (int i = 1; i <= n5; i++) {
+    if (n5 % i == 0) {
+      print(i);
+    }
+  }
+  print("Task 6----------------------------------------");
+  List<int> a6 = [1, 1, 2, 3, 5, 8, 13, 21, 34, 55, 89];
+  List<int> b6 = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 89];
+  List c6 = [];
+  c6.length = 11;
+  for (int i = 0; i < a6.length; i++) {
+    for (int j = 0; j < b6.length; j++) {
+      if (a6[i] == b6[j]) {
+        c6.add(a[i]);
+      }
+    }
+  }
+  print(c6);
+  print("Task 7-------------------------------------");
+  int? n7 = int.parse(stdin.readLineSync()!);
+  int count = 0;
+  for (int i = 1; i <= n7; i++) {
+    if (n7 % i == 0) {
+      count++;
+    }
+  }
+  if (count == 2) {
+    print("Prime");
+  } else {
+    print("Not prime");
+  }
+  print("Task 8----------------------------------");
+  var list8 = <int>{};
+  int? n8 = int.parse(stdin.readLineSync()!);
+  for (int i = 0; i < n8; i++) {
+    int? temp8 = int.parse(stdin.readLineSync()!);
+    if (!list8.contains(temp8)) {
+      list8.add(temp8);
+    }
+  }
+  print(list8);
+}
